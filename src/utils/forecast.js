@@ -15,7 +15,9 @@ const forecast = (lat,long,callback) => {
            callback("Unable to find weather, try another search ",undefined)
        }else{
            callback(undefined,{
-               temp: body.main.temp,                              
+               temp:body.main.temp,    
+               temp_min : body.main.temp_min,
+               temp_max: body.main.temp_max,                          
            });
        }
     })    

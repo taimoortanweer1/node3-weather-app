@@ -19,7 +19,7 @@ weatherForm.addEventListener(('submit'),(e) => {
     } else {
 
       messageOne.textContent = data[0].location
-      messageTwo.textContent = data[0].forecast      
+      messageTwo.textContent = "Current Temperature is " + data[0].forecast + " with Min Temp :" + data[0].temp_min + " and Max Temp : " + data[0].temp_min     
     }
   });
 });
